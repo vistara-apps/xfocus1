@@ -1,7 +1,6 @@
 'use client';
 
 import { Search, Plus, Mic } from 'lucide-react';
-import { ConnectWallet } from '@coinbase/onchainkit/wallet';
 
 export function Header() {
   return (
@@ -24,7 +23,9 @@ export function Header() {
       </div>
       
       <div className="flex items-center space-x-4">
-        <ConnectWallet />
+        <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+          Connect Wallet
+        </button>
       </div>
     </div>
   );
